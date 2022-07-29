@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+main {
+  height: 94.5vh;
+  background-color: hsl(210deg, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+  margin: 0 20%;
+}
+.container section {
+  padding: 20px 40px;
+  border-radius: 12px;
+}
+.container .profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .daniel {
+  grid-area: 1/1/2/3;
+  background-color: hsl(263deg, 55%, 52%);
+  background-image: url(./images/quotation-icon-25.png);
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position-x: 78%;
+  background-blend-mode: soft-light;
+}
+.container .daniel img {
+  border: 2px solid hsl(263deg, 66%, 63%);
+}
+.container .daniel h1 {
+  color: #fff;
+}
+.container .daniel h2 {
+  color: hsl(263deg, 74%, 70%);
+}
+.container .daniel h3 {
+  color: #fff;
+}
+.container .daniel p {
+  color: hsl(263deg, 74%, 70%);
+}
+.container .jonathan {
+  grid-area: 1/3/2/4;
+  background-color: hsl(217deg, 19%, 35%);
+}
+.container .jonathan h1 {
+  color: #fff;
+}
+.container .jonathan h2 {
+  color: hsl(0deg, 0%, 81%);
+}
+.container .jonathan h3 {
+  color: #fff;
+}
+.container .jonathan p {
+  color: hsl(0deg, 0%, 81%);
+}
+.container .jeanette {
+  grid-area: 2/1/3/2;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.container .jeanette h1 {
+  color: hsl(219deg, 29%, 14%);
+}
+.container .jeanette h2 {
+  color: hsl(217deg, 19%, 35%);
+}
+.container .jeanette h3 {
+  color: hsl(219deg, 29%, 14%);
+}
+.container .jeanette p {
+  color: hsl(217deg, 19%, 35%);
+}
+.container .patrick {
+  grid-area: 2/2/3/4;
+  background-color: hsl(219deg, 29%, 14%);
+}
+.container .patrick h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.container .patrick h2 {
+  color: hsl(0deg, 0%, 81%);
+}
+.container .patrick h3 {
+  color: hsl(0deg, 0%, 100%);
+}
+.container .patrick p {
+  color: hsl(0deg, 0%, 81%);
+}
+.container .kira {
+  grid-area: 1/4/3/5;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.container .kira h1 {
+  color: hsl(219deg, 29%, 14%);
+}
+.container .kira h2 {
+  color: hsl(217deg, 19%, 35%);
+}
+.container .kira h3 {
+  color: hsl(219deg, 29%, 14%);
+}
+.container .kira p {
+  color: hsl(217deg, 19%, 35%);
+}
+
+footer {
+  background-color: hsl(210deg, 46%, 95%);
+  text-align: end;
+  padding: 15px;
+}
+footer a {
+  color: rgb(0, 89, 255);
+}
+
+@media (max-width: 380px) {
+  main {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container {
+    margin: 5%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section {
+    padding: 15px !important;
+  }
+}/*# sourceMappingURL=styles.css.map */
